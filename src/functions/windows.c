@@ -1072,6 +1072,8 @@ LRESULT __stdcall wndproc_LifeClass_hook(HWND hwnd, UINT msg, WPARAM wparam, LPA
 		  p += sprintf(p, " Poison counters: %d", stored_player_counters.poison_);
 		if (stored_player_counters.experience_)
 		  p += sprintf(p, " Experience counters: %d", stored_player_counters.experience_);
+		if (stored_player_counters.energy_)
+		  p += sprintf(p, " Energy: %d", stored_player_counters.energy_);
 
 		dest[99] = 0;	// actual maximum length
 

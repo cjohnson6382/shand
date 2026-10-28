@@ -430,6 +430,9 @@ void poison(int player, int number_of_counters);
 void raw_set_poison(int player, uint8_t new_number_of_counters);	// avoid
 void add_experience(int player, int number_of_counters);
 void raw_set_experience(int player, uint8_t new_number_of_counters);	// avoid
+void add_energy(int player, int number_of_counters);	// "you get {E}..."
+int pay_energy(int player, int number_of_counters);	// Removes that many energy counters and returns 1 if player has them; otherwise returns 0 and changes nothing.
+int pay_energy_optional(int player, int card, int number_of_counters, const char* prompt);	// "you may pay {E}...": asks the human, AI always pays.  Returns 1 if paid.
 
 static inline void add_counter(int player, int card, counter_t type)	{ add_counters(player, card, type, 1); }
 static inline void remove_counter(int player, int card, counter_t type)	{ remove_counters(player, card, type, 1); }
@@ -1638,6 +1641,10 @@ int get_counter_type_by_instance(card_instance_t* instance);
 int card_instances_should_be_displayed_identically(card_instance_t* inst1, card_instance_t* inst2);
 const char* get_card_or_subtype_name(int subtype_or_csvid);
 int delirium(int player);
+void fabricate(int player, int card, event_t event, int n);	// Fabricate n
+int vehicle(int player, int card, event_t event, int crew, sp_keyword_t sp_keywords);	// Crew n; sp_keywords are granted while it's a creature
+int is_monarch(int player);
+void become_monarch(int player, int card);
 int when_attacks_pump_self(int player, int card, event_t event, int power, int toughness);
 
 /* Cards in already coded, for re-utilization purposes */

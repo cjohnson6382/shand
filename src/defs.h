@@ -2064,23 +2064,27 @@ private:
 #endif
 	uint8_t poison_;		// Do not access directly; in Manalink, use POISON_COUNTERS() to access, poison() to add, and raw_set_poison() to remove
 	uint8_t experience_;	// Do not access directly; in Manalink, use EXPERIENCE_COUNTERS() to access, add_experience() to add, and raw_set_experience() to remove
+	uint8_t energy_;		// Do not access directly; in Manalink, use ENERGY_COUNTERS() to access, add_energy() to add, and pay_energy() to remove
 #ifdef SHANDALAR
 public:
 #endif
-	uint8_t unused1;
 	uint8_t unused2;
 
 #ifdef SHANDALAR
 	uint8_t poison(void) const					{ return poison_; }
 	uint8_t experience(void) const				{ return experience_; }
+	uint8_t energy(void) const					{ return energy_; }
 	void raw_set_poison(uint8_t new_val)		{ poison_ = new_val; }	// always go through poison(player, number_of_counters = 1) in engine.cpp
 	void raw_set_experience(uint8_t new_val)	{ experience_ = new_val; }	// always go through add_experience(player, number_of_counters = 1) in engine.cpp
+	void raw_set_energy(uint8_t new_val)		{ energy_ = new_val; }
 #  define POISON_COUNTERS(p)	(player_counters[(p)].poison())
 #else
 #  define POISON_COUNTERS(p)		(player_counters[(p)].poison_ + 0)
 #  define EXPERIENCE_COUNTERS(p)	(player_counters[(p)].experience_ + 0)
+#  define ENERGY_COUNTERS(p)		(player_counters[(p)].energy_ + 0)
 #endif
 } PlayerCounters;
+STATIC_ASSERT(sizeof(PlayerCounters) == 4, PlayerCounters_must_match_Magic_exe);	// Magic.exe stores and saves these as one dword at 0x4EF530
 
 typedef enum {
 	PB_OPPONENT_CHECKS_ATTACK_LEGALITY	= 1<<0,	// Always dispatch EVENT_ATTACK_LEGALITY for the other player's creatures, even if no card with EA_DECLARE_ATTACK is on the battlefield.

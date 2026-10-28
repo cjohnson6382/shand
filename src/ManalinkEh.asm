@@ -11388,6 +11388,35 @@ extern _card_geier_reach_sanitarium
 extern _wndproc_MainClass_hook@16
 extern _card_dream_pillager
 extern _card_seal_of_the_guildpact
+extern _card_unimplemented
+extern _card_thriving_grubs
+extern _card_accomplished_automaton
+extern _card_visionary_augmenter
+extern _card_glimmer_of_genius
+extern _card_live_fast
+extern _card_maulfist_squad
+extern _card_weaponcraft_enthusiast
+extern _card_harnessed_lightning
+extern _card_lathnu_hellion
+extern _card_attune_with_aether
+extern _card_highspire_artisan
+extern _card_longtusk_cub
+extern _card_riparian_tiger
+extern _card_sage_of_shailas_claim
+extern _card_voltaic_brawler
+extern _card_whirler_virtuoso
+extern _card_aradara_express
+extern _card_bomat_bazaar_barge
+extern _card_fleetwheel_cruiser
+extern _card_iron_league_steed
+extern _card_ovalchase_dragster
+extern _card_renegade_freighter
+extern _card_sky_skiff
+extern _card_stun
+extern _card_the_monarch
+extern _card_throne_warden
+extern _card_custodi_lich
+extern _card_garrulous_sycophant
 
 global _DllEntry
 _DllEntry:
@@ -22783,4 +22812,345 @@ _CodeSectionEx:                  ; CodePointer
   jmp near _wndproc_MainClass_hook@16     ; 200ee59
   jmp near _card_dream_pillager     ; 200ee5e
   jmp near _card_seal_of_the_guildpact     ; 200ee63
+  jmp near _card_unimplemented     ; 200ee68 TODO card_viridian_acolyte: Viridian Acolyte, Helionaut, Mana Cylix
+  jmp near _card_unimplemented     ; 200ee6d TODO card_counterlash: Counterlash
+  jmp near _card_unimplemented     ; 200ee72 TODO card_wall_of_hope: Wall of Hope
+  jmp near _card_unimplemented     ; 200ee77 TODO card_robber_fly: Robber Fly
+  jmp near _card_unimplemented     ; 200ee7c TODO card_deathless_behemoth: Deathless Behemoth
+  jmp near _card_unimplemented     ; 200ee81 TODO card_gruesome_slaughter: Gruesome Slaughter
+  jmp near _card_unimplemented     ; 200ee86 TODO card_hallowed_moonlight: Hallowed Moonlight
+  jmp near _card_unimplemented     ; 200ee8b TODO card_starfield_of_nyx: Starfield of Nyx
+  jmp near _card_unimplemented     ; 200ee90 TODO card_disciple_of_the_ring: Disciple of the Ring
+  jmp near _card_unimplemented     ; 200ee95 TODO card_jace_vryns_prodigy: Jace, Vryn's Prodigy
+  jmp near _card_unimplemented     ; 200ee9a TODO card_jace_telepath_unbound: Jace, Telepath Unbound
+  jmp near _card_unimplemented     ; 200ee9f TODO card_jace_telepath_unbound_emblem: Jace, Telepath Unbound Emblem
+  jmp near _card_unimplemented     ; 200eea4 TODO card_talent_of_the_telepath: Talent of the Telepath
+  jmp near _card_unimplemented     ; 200eea9 TODO card_willbreaker: Willbreaker
+  jmp near _card_unimplemented     ; 200eeae TODO card_despoiler_of_souls: Despoiler of Souls
+  jmp near _card_unimplemented     ; 200eeb3 TODO card_ereboss_titan: Erebos's Titan
+  jmp near _card_unimplemented     ; 200eeb8 TODO card_gnarlroot_trapper: Gnarlroot Trapper
+  jmp near _card_unimplemented     ; 200eebd TODO card_nightsnare: Nightsnare
+  jmp near _card_unimplemented     ; 200eec2 TODO card_touch_of_moonglove: Touch of Moonglove
+  jmp near _card_unimplemented     ; 200eec7 TODO card_alhammarrets_archive: Alhammarret's Archive
+  jmp near _card_unimplemented     ; 200eecc TODO card_mage_ring_network: Mage-Ring Network
+  jmp near _card_unimplemented     ; 200eed1 TODO card_abundant_maw: Abundant Maw
+  jmp near _card_unimplemented     ; 200eed6 TODO card_decimator_of_the_provinces: Decimator of the Provinces
+  jmp near _card_unimplemented     ; 200eedb TODO card_distended_mindbender: Distended Mindbender
+  jmp near _card_unimplemented     ; 200eee0 TODO card_drownyard_behemoth: Drownyard Behemoth
+  jmp near _card_unimplemented     ; 200eee5 TODO card_elder_deep_fiend: Elder Deep-Fiend
+  jmp near _card_unimplemented     ; 200eeea TODO card_eternal_scourge: Eternal Scourge
+  jmp near _card_unimplemented     ; 200eeef TODO card_it_of_the_horrid_swarm: It of the Horrid Swarm
+  jmp near _card_unimplemented     ; 200eef4 TODO card_lashweed_lurker: Lashweed Lurker
+  jmp near _card_unimplemented     ; 200eef9 TODO card_unused_200eef9: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200eefe TODO card_vexing_scuttler: Vexing Scuttler
+  jmp near _card_unimplemented     ; 200ef03 TODO card_wretched_gryff: Wretched Gryff
+  jmp near _card_unimplemented     ; 200ef08 TODO card_blessed_alliance: Blessed Alliance
+  jmp near _card_unimplemented     ; 200ef0d TODO card_borrowed_grace: Borrowed Grace
+  jmp near _card_unimplemented     ; 200ef12 TODO card_bruna_the_fading_light: Bruna, the Fading Light
+  jmp near _card_unimplemented     ; 200ef17 TODO card_gisela_the_broken_blade: Gisela, the Broken Blade
+  jmp near _card_unimplemented     ; 200ef1c TODO card_brisela_voice_of_nightmares: Brisela, Voice of Nightmares
+  jmp near _card_unimplemented     ; 200ef21 TODO card_collective_effort: Collective Effort
+  jmp near _card_unimplemented     ; 200ef26 TODO card_deploy_the_gatewatch: Deploy the Gatewatch
+  jmp near _card_unimplemented     ; 200ef2b TODO card_extricator_of_sin: Extricator of Sin
+  jmp near _card_unimplemented     ; 200ef30 TODO card_extricator_of_flesh: Extricator of Flesh
+  jmp near _card_unimplemented     ; 200ef35 TODO card_sigardas_aid: Sigarda's Aid
+  jmp near _card_unimplemented     ; 200ef3a TODO card_advanced_stitchwing: Advanced Stitchwing
+  jmp near _card_unimplemented     ; 200ef3f TODO card_coax_from_the_blind_eternities: Coax from the Blind Eternities
+  jmp near _card_unimplemented     ; 200ef44 TODO card_curious_homunculus: Curious Homunculus
+  jmp near _card_unimplemented     ; 200ef49 TODO card_voracious_reader: Voracious Reader
+  jmp near _card_unimplemented     ; 200ef4e TODO card_fortunes_favor: Fortune's Favor
+  jmp near _card_unimplemented     ; 200ef53 TODO card_identity_thief: Identity Thief
+  jmp near _card_unimplemented     ; 200ef58 TODO card_imprisoned_in_the_moon: Imprisoned in the Moon
+  jmp near _card_unimplemented     ; 200ef5d TODO card_minds_dilation: Mind's Dilation
+  jmp near _card_unimplemented     ; 200ef62 TODO card_unsubstantiate: Unsubstantiate
+  jmp near _card_unimplemented     ; 200ef67 TODO card_borrowed_malevolence: Borrowed Malevolence
+  jmp near _card_unimplemented     ; 200ef6c TODO card_collective_brutality: Collective Brutality
+  jmp near _card_unimplemented     ; 200ef71 TODO card_dark_salvation: Dark Salvation
+  jmp near _card_unimplemented     ; 200ef76 TODO card_graf_harvest: Graf Harvest
+  jmp near _card_unimplemented     ; 200ef7b TODO card_graf_rats: Graf Rats
+  jmp near _card_unimplemented     ; 200ef80 TODO card_midnight_scavengers: Midnight Scavengers
+  jmp near _card_unimplemented     ; 200ef85 TODO card_chittering_host: Chittering Host
+  jmp near _card_unimplemented     ; 200ef8a TODO card_haunted_dead: Haunted Dead
+  jmp near _card_unimplemented     ; 200ef8f TODO card_liliana_the_last_hope: Liliana, the Last Hope
+  jmp near _card_unimplemented     ; 200ef94 TODO card_liliana_the_last_hopes_emblem: Liliana, the Last Hope's Emblem
+  jmp near _card_unimplemented     ; 200ef99 TODO card_oath_of_liliana: Oath of Liliana
+  jmp near _card_unimplemented     ; 200ef9e TODO card_ruthless_disposal: Ruthless Disposal
+  jmp near _card_unimplemented     ; 200efa3 TODO card_thraben_foulbloods: Thraben Foulbloods
+  jmp near _card_unimplemented     ; 200efa8 TODO card_assembled_alphas: Assembled Alphas
+  jmp near _card_unimplemented     ; 200efad TODO card_borrowed_hostility: Borrowed Hostility
+  jmp near _card_unimplemented     ; 200efb2 TODO card_collective_defiance: Collective Defiance
+  jmp near _card_unimplemented     ; 200efb7 TODO card_impetuous_devils: Impetuous Devils
+  jmp near _card_unimplemented     ; 200efbc TODO card_nahiris_wrath: Nahiri's Wrath
+  jmp near _card_unimplemented     ; 200efc1 TODO card_savage_alliance: Savage Alliance
+  jmp near _card_unimplemented     ; 200efc6 TODO card_shreds_of_sanity: Shreds of Sanity
+  jmp near _card_unimplemented     ; 200efcb TODO card_stromkirk_occultist: Stromkirk Occultist
+  jmp near _card_unimplemented     ; 200efd0 TODO card_crop_sigil: Crop Sigil
+  jmp near _card_unimplemented     ; 200efd5 TODO card_eldritch_evolution: Eldritch Evolution
+  jmp near _card_unimplemented     ; 200efda TODO card_emrakuls_evangel: Emrakul's Evangel
+  jmp near _card_unimplemented     ; 200efdf TODO card_foul_emissary: Foul Emissary
+  jmp near _card_unimplemented     ; 200efe4 TODO card_kessig_prowler: Kessig Prowler
+  jmp near _card_unimplemented     ; 200efe9 TODO card_permeating_mass: Permeating Mass
+  jmp near _card_unimplemented     ; 200efee TODO card_waxing_moon: Waxing Moon
+  jmp near _card_unimplemented     ; 200eff3 TODO card_gisa_and_geralf: Gisa and Geralf
+  jmp near _card_unimplemented     ; 200eff8 TODO card_spell_queller: Spell Queller
+  jmp near _card_unimplemented     ; 200effd TODO card_tamiyo_field_researcher: Tamiyo, Field Researcher
+  jmp near _card_unimplemented     ; 200f002 TODO card_tamiyo_field_researchers_emblem: Tamiyo, Field Researcher's Emblem
+  jmp near _card_unimplemented     ; 200f007 TODO card_soul_separator: Soul Separator
+  jmp near _card_unimplemented     ; 200f00c TODO card_terrarion: Terrarion
+  jmp near _card_unimplemented     ; 200f011 TODO card_thirsting_axe: Thirsting Axe
+  jmp near _card_unimplemented     ; 200f016 TODO card_hanweir_battlements: Hanweir Battlements
+  jmp near _card_unimplemented     ; 200f01b TODO card_hanweir_garrison: Hanweir Garrison
+  jmp near _card_unimplemented     ; 200f020 TODO card_hanweir_the_writhing_township: Hanweir, the Writhing Township
+  jmp near _card_unimplemented     ; 200f025 TODO card_conspiracy_adrianas_valor: ** CONSPIRACY – Adriana's Valor
+  jmp near _card_unimplemented     ; 200f02a TODO card_conspiracy_assemble_the_rank_and_vile: ** CONSPIRACY – Assemble the Rank and Vile
+  jmp near _card_unimplemented     ; 200f02f TODO card_conspiracy_echoing_boon: ** CONSPIRACY – Echoing Boon
+  jmp near _card_unimplemented     ; 200f034 TODO card_conspiracy_emissarys_ploy: ** CONSPIRACY – Emissary's Ploy
+  jmp near _card_unimplemented     ; 200f039 TODO card_conspiracy_hired_heist: ** CONSPIRACY – Hired Heist
+  jmp near _card_unimplemented     ; 200f03e TODO card_unused_200f03e: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f043 TODO card_conspiracy_hymn_of_the_wilds: ** CONSPIRACY – Hymn of the Wilds
+  jmp near _card_unimplemented     ; 200f048 TODO card_conspiracy_incendiary_dissent: ** CONSPIRACY – Incendiary Dissent
+  jmp near _card_unimplemented     ; 200f04d TODO card_conspiracy_natural_unity: ** CONSPIRACY – Natural Unity
+  jmp near _card_unimplemented     ; 200f052 TODO card_conspiracy_summoners_bond: ** CONSPIRACY – Summoner's Bond
+  jmp near _card_unimplemented     ; 200f057 TODO card_lieutenants_of_the_guard: Lieutenants of the Guard
+  jmp near _card_unimplemented     ; 200f05c TODO card_palace_jailer: Palace Jailer
+  jmp near _card_custodi_lich     ; 200f061
+  jmp near _card_unimplemented     ; 200f066 TODO card_protector_of_the_crown: Protector of the Crown
+  jmp near _card_unimplemented     ; 200f06b TODO card_recruiter_of_the_guard: Recruiter of the Guard
+  jmp near _card_unimplemented     ; 200f070 TODO card_sanctum_prelate: Sanctum Prelate
+  jmp near _card_unimplemented     ; 200f075 TODO card_spectral_grasp: Spectral Grasp
+  jmp near _card_throne_warden     ; 200f07a
+  jmp near _card_unimplemented     ; 200f07f TODO card_expropriate: Expropriate
+  jmp near _card_unimplemented     ; 200f084 TODO card_illusion_of_choice: Illusion of Choice
+  jmp near _card_unimplemented     ; 200f089 TODO card_keeper_of_keys: Keeper of Keys
+  jmp near _card_unimplemented     ; 200f08e TODO card_messenger_jays: Messenger Jays
+  jmp near _card_unimplemented     ; 200f093 TODO card_skittering_crustacean: Skittering Crustacean
+  jmp near _card_unimplemented     ; 200f098 TODO card_capital_punishment: Capital Punishment
+  jmp near _card_unimplemented     ; 200f09d TODO card_deadly_designs: Deadly Designs
+  jmp near _card_garrulous_sycophant     ; 200f0a2
+  jmp near _card_unimplemented     ; 200f0a7 TODO card_marchesas_decree: Marchesa's Decree
+  jmp near _card_unimplemented     ; 200f0ac TODO card_sinuous_vermin: Sinuous Vermin
+  jmp near _card_unimplemented     ; 200f0b1 TODO card_thorn_of_the_black_rose: Thorn of the Black Rose
+  jmp near _card_unimplemented     ; 200f0b6 TODO card_crown_hunter_hireling: Crown-Hunter Hireling
+  jmp near _card_unimplemented     ; 200f0bb TODO card_grenzo_havoc_raiser: Grenzo, Havoc Raiser
+  jmp near _card_unimplemented     ; 200f0c0 TODO card_skyline_despot: Skyline Despot
+  jmp near _card_unimplemented     ; 200f0c5 TODO card_subterranean_tremors: Subterranean Tremors
+  jmp near _card_unimplemented     ; 200f0ca TODO card_borderland_explorer: Borderland Explorer
+  jmp near _card_unimplemented     ; 200f0cf TODO card_domesticated_hydra: Domesticated Hydra
+  jmp near _card_unimplemented     ; 200f0d4 TODO card_orchard_elemental: Orchard Elemental
+  jmp near _card_unimplemented     ; 200f0d9 TODO card_regal_behemoth: Regal Behemoth
+  jmp near _card_unimplemented     ; 200f0de TODO card_selvala_heart_of_the_wilds: Selvala, Heart of the Wilds
+  jmp near _card_unimplemented     ; 200f0e3 TODO card_selvalas_stampede: Selvala's Stampede
+  jmp near _card_unimplemented     ; 200f0e8 TODO card_splitting_slime: Splitting Slime
+  jmp near _card_unimplemented     ; 200f0ed TODO card_daretti_ingenious_iconoclast: Daretti, Ingenious Iconoclast
+  jmp near _card_unimplemented     ; 200f0f2 TODO card_kaya_ghost_assassin: Kaya, Ghost Assassin
+  jmp near _card_the_monarch     ; 200f0f7
+  jmp near _card_unimplemented     ; 200f0fc TODO card_leovold_emissary_of_trest: Leovold, Emissary of Trest
+  jmp near _card_unimplemented     ; 200f101 TODO card_queen_marchesa: Queen Marchesa
+  jmp near _card_unimplemented     ; 200f106 TODO card_throne_of_the_high_city: Throne of the High City
+  jmp near _card_unimplemented     ; 200f10b TODO card_acrobatic_maneuver: Acrobatic Maneuver
+  jmp near _card_unimplemented     ; 200f110 TODO card_aetherstorm_roc: Aetherstorm Roc
+  jmp near _card_unimplemented     ; 200f115 TODO card_angel_of_invention: Angel of Invention
+  jmp near _card_unimplemented     ; 200f11a TODO card_authority_of_the_consuls: Authority of the Consuls
+  jmp near _card_unimplemented     ; 200f11f TODO card_aviary_mechanic: Aviary Mechanic
+  jmp near _card_unimplemented     ; 200f124 TODO card_built_to_last: Built to Last
+  jmp near _card_unimplemented     ; 200f129 TODO card_cataclysmic_gearhulk: Cataclysmic Gearhulk
+  jmp near _card_unimplemented     ; 200f12e TODO card_consulate_surveillance: Consulate Surveillance
+  jmp near _card_unimplemented     ; 200f133 TODO card_consuls_shieldguard: Consul's Shieldguard
+  jmp near _card_unimplemented     ; 200f138 TODO card_eddytrail_hawk: Eddytrail Hawk
+  jmp near _card_unimplemented     ; 200f13d TODO card_fragmentize: Fragmentize
+  jmp near _card_unimplemented     ; 200f142 TODO card_fumigate: Fumigate
+  jmp near _card_accomplished_automaton     ; 200f147
+  jmp near _card_unimplemented     ; 200f14c TODO card_herald_of_the_fair: Herald of the Fair
+  jmp near _card_unimplemented     ; 200f151 TODO card_impeccable_timing: Impeccable Timing
+  jmp near _card_unimplemented     ; 200f156 TODO card_master_trinketeer: Master Trinketeer
+  jmp near _card_unimplemented     ; 200f15b TODO card_ninth_bridge_patrol: Ninth Bridge Patrol
+  jmp near _card_unimplemented     ; 200f160 TODO card_revoke_privileges: Revoke Privileges
+  jmp near _card_unimplemented     ; 200f165 TODO card_servo_exhibition: Servo Exhibition
+  jmp near _card_unimplemented     ; 200f16a TODO card_skywhalers_shot: Skywhaler's Shot
+  jmp near _card_thriving_grubs     ; 200f16f
+  jmp near _card_unimplemented     ; 200f174 TODO card_toolcraft_exemplar: Toolcraft Exemplar
+  jmp near _card_visionary_augmenter     ; 200f179
+  jmp near _card_unimplemented     ; 200f17e TODO card_wispweaver_angel: Wispweaver Angel
+  jmp near _card_unimplemented     ; 200f183 TODO card_aether_meltdown: Aether Meltdown
+  jmp near _card_unimplemented     ; 200f188 TODO card_aether_theorist: Aether Theorist
+  jmp near _card_unimplemented     ; 200f18d TODO card_aether_tradewinds: Æther Tradewinds
+  jmp near _card_unimplemented     ; 200f192 TODO card_aethersquall_ancient: Aethersquall Ancient
+  jmp near _card_unimplemented     ; 200f197 TODO card_ceremonious_rejection: Ceremonious Rejection
+  jmp near _card_unimplemented     ; 200f19c TODO card_confiscation_coup: Confiscation Coup
+  jmp near _card_unimplemented     ; 200f1a1 TODO card_disappearing_act: Disappearing Act
+  jmp near _card_unimplemented     ; 200f1a6 TODO card_dramatic_reversal: Dramatic Reversal
+  jmp near _card_unimplemented     ; 200f1ab TODO card_era_of_innovation: Era of Innovation
+  jmp near _card_unimplemented     ; 200f1b0 TODO card_experimental_aviator: Experimental Aviator
+  jmp near _card_unimplemented     ; 200f1b5 TODO card_failed_inspection: Failed Inspection
+  jmp near _card_unimplemented     ; 200f1ba TODO card_gearseeker_serpent: Gearseeker Serpent
+  jmp near _card_glimmer_of_genius     ; 200f1bf
+  jmp near _card_unimplemented     ; 200f1c4 TODO card_glint_nest_crane: Glint-Nest Crane
+  jmp near _card_unimplemented     ; 200f1c9 TODO card_hightide_hermit: Hightide Hermit
+  jmp near _card_unimplemented     ; 200f1ce TODO card_insidious_will: Insidious Will
+  jmp near _card_unimplemented     ; 200f1d3 TODO card_janjeet_sentry: Janjeet Sentry
+  jmp near _card_unimplemented     ; 200f1d8 TODO card_malfunction: Malfunction
+  jmp near _card_unimplemented     ; 200f1dd TODO card_metallurgic_summonings: Metallurgic Summonings
+  jmp near _card_unimplemented     ; 200f1e2 TODO card_minister_of_inquiries: Minister of Inquiries
+  jmp near _card_unimplemented     ; 200f1e7 TODO card_padeem_consul_of_innovation: Padeem, Consul of Innovation
+  jmp near _card_unimplemented     ; 200f1ec TODO card_paradoxical_outcome: Paradoxical Outcome
+  jmp near _card_unimplemented     ; 200f1f1 TODO card_revolutionary_rebuff: Revolutionary Rebuff
+  jmp near _card_unimplemented     ; 200f1f6 TODO card_saheelis_artistry: Saheeli's Artistry
+  jmp near _card_unimplemented     ; 200f1fb TODO card_select_for_inspection: Select for Inspection
+  jmp near _card_unimplemented     ; 200f200 TODO card_shrewd_negotiation: Shrewd Negotiation
+  jmp near _card_unimplemented     ; 200f205 TODO card_tezzerets_ambition: Tezzeret's Ambition
+  jmp near _card_unimplemented     ; 200f20a TODO card_torrential_gearhulk: Torrential Gearhulk
+  jmp near _card_unimplemented     ; 200f20f TODO card_weldfast_wingsmith: Weldfast Wingsmith
+  jmp near _card_unimplemented     ; 200f214 TODO card_aetherborn_marauder: Aetherborn Marauder
+  jmp near _card_unimplemented     ; 200f219 TODO card_demon_of_dark_schemes: Demon of Dark Schemes
+  jmp near _card_unimplemented     ; 200f21e TODO card_dhund_operative: Dhund Operative
+  jmp near _card_unimplemented     ; 200f223 TODO card_die_young: Die Young
+  jmp near _card_unimplemented     ; 200f228 TODO card_dukhara_scavenger: Dukhara Scavenger
+  jmp near _card_unimplemented     ; 200f22d TODO card_eliminate_the_competition: Eliminate the Competition
+  jmp near _card_unimplemented     ; 200f232 TODO card_embraal_bruiser: Embraal Bruiser
+  jmp near _card_unimplemented     ; 200f237 TODO card_essence_extraction: Essence Extraction
+  jmp near _card_unimplemented     ; 200f23c TODO card_fortuitous_find: Fortuitous Find
+  jmp near _card_unimplemented     ; 200f241 TODO card_foundry_screecher: Foundry Screecher
+  jmp near _card_unimplemented     ; 200f246 TODO card_fretwork_colony: Fretwork Colony
+  jmp near _card_unimplemented     ; 200f24b TODO card_gonti_lord_of_luxury: Gonti, Lord of Luxury
+  jmp near _card_unimplemented     ; 200f250 TODO card_harsh_scrutiny: Harsh Scrutiny
+  jmp near _card_unimplemented     ; 200f255 TODO card_lawless_broker: Lawless Broker
+  jmp near _card_live_fast     ; 200f25a
+  jmp near _card_unimplemented     ; 200f25f TODO card_lost_legacy: Lost Legacy
+  jmp near _card_cower_in_fear     ; 200f264
+  jmp near _card_unimplemented     ; 200f269 TODO card_marionette_master: Marionette Master
+  jmp near _card_maulfist_squad     ; 200f26e
+  jmp near _card_unimplemented     ; 200f273 TODO card_midnight_oil: Midnight Oil
+  jmp near _card_unimplemented     ; 200f278 TODO card_morbid_curiosity: Morbid Curiosity
+  jmp near _card_unimplemented     ; 200f27d TODO card_night_market_lookout: Night Market Lookout
+  jmp near _card_unimplemented     ; 200f282 TODO card_noxious_gearhulk: Noxious Gearhulk
+  jmp near _card_unimplemented     ; 200f287 TODO card_rush_of_vitality: Rush of Vitality
+  jmp near _card_unimplemented     ; 200f28c TODO card_subtle_strike: Subtle Strike
+  jmp near _card_unimplemented     ; 200f291 TODO card_syndicate_trafficker: Syndicate Trafficker
+  jmp near _card_unimplemented     ; 200f296 TODO card_tidy_conclusion: Tidy Conclusion
+  jmp near _card_unimplemented     ; 200f29b TODO card_underhanded_designs: Underhanded Designs
+  jmp near _card_weaponcraft_enthusiast     ; 200f2a0
+  jmp near _card_unimplemented     ; 200f2a5 TODO card_aethertorch_renegade: Aethertorch Renegade
+  jmp near _card_unimplemented     ; 200f2aa TODO card_built_to_smash: Built to Smash
+  jmp near _card_unimplemented     ; 200f2af TODO card_cathartic_reunion: Cathartic Reunion
+  jmp near _card_unimplemented     ; 200f2b4 TODO card_chandra_torch_of_defiance: Chandra, Torch of Defiance
+  jmp near _card_unimplemented     ; 200f2b9 TODO card_chandra_torch_of_defiance_emblem: Chandra, Torch of Defiance Emblem
+  jmp near _card_unimplemented     ; 200f2be TODO card_combustible_gearhulk: Combustible Gearhulk
+  jmp near _card_unimplemented     ; 200f2c3 TODO card_fateful_showdown: Fateful Showdown
+  jmp near _card_unimplemented     ; 200f2c8 TODO card_furious_reprisal: Furious Reprisal
+  jmp near _card_untamed_hunger     ; 200f2cd
+  jmp near _card_harnessed_lightning     ; 200f2d2
+  jmp near _card_unimplemented     ; 200f2d7 TODO card_hijack: Hijack
+  jmp near _card_unimplemented     ; 200f2dc TODO card_incendiary_sabotage: Incendiary Sabotage
+  jmp near _card_unimplemented     ; 200f2e1 TODO card_inventors_apprentice: Inventor's Apprentice
+  jmp near _card_lathnu_hellion     ; 200f2e6
+  jmp near _card_unimplemented     ; 200f2eb TODO card_madcap_experiment: Madcap Experiment
+  jmp near _card_unimplemented     ; 200f2f0 TODO card_maulfist_doorbuster: Maulfist Doorbuster
+  jmp near _card_unimplemented     ; 200f2f5 TODO card_pia_nalaar: Pia Nalaar
+  jmp near _card_unimplemented     ; 200f2fa TODO card_quicksmith_genius: Quicksmith Genius
+  jmp near _card_unimplemented     ; 200f2ff TODO card_reckless_fireweaver: Reckless Fireweaver
+  jmp near _card_stun     ; 200f304
+  jmp near _card_unimplemented     ; 200f309 TODO card_ruinous_gremlin: Ruinous Gremlin
+  jmp near _card_unimplemented     ; 200f30e TODO card_salivating_gremlins: Salivating Gremlins
+  jmp near _card_unimplemented     ; 200f313 TODO card_skyship_stalker: Skyship Stalker, Spark of Creativity
+  jmp near _card_unimplemented     ; 200f318 TODO card_unused_200f318: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f31d TODO card_unused_200f31d: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f322 TODO card_spontaneous_artist: Spontaneous Artist
+  jmp near _card_unimplemented     ; 200f327 TODO card_start_your_engines: Start Your Engines
+  jmp near _card_unimplemented     ; 200f32c TODO card_territorial_gorger: Territorial Gorger
+  jmp near _card_unimplemented     ; 200f331 TODO card_welding_sparks: Welding Sparks
+  jmp near _card_unimplemented     ; 200f336 TODO card_appetite_for_the_unnatural: Appetite for the Unnatural
+  jmp near _card_unimplemented     ; 200f33b TODO card_unused_200f33b: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f340 TODO card_architect_of_the_untamed: Architect of the Untamed
+  jmp near _card_unimplemented     ; 200f345 TODO card_armorcraft_judge: Armorcraft Judge
+  jmp near _card_attune_with_aether     ; 200f34a
+  jmp near _card_unimplemented     ; 200f34f TODO card_blossoming_defense: Blossoming Defense
+  jmp near _card_unimplemented     ; 200f354 TODO card_unused_200f354: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f359 TODO card_cultivator_of_blades: Cultivator of Blades
+  jmp near _card_unimplemented     ; 200f35e TODO card_dubious_challenge: Dubious Challenge
+  jmp near _card_unimplemented     ; 200f363 TODO card_durable_handicraft: Durable Handicraft
+  jmp near _card_unimplemented     ; 200f368 TODO card_elegant_edgecrafters: Elegant Edgecrafters
+  jmp near _card_unimplemented     ; 200f36d TODO card_unused_200f36d: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f372 TODO card_ghirapur_guide: Ghirapur Guide
+  jmp near _card_highspire_artisan     ; 200f377
+  jmp near _card_unimplemented     ; 200f37c TODO card_kujar_seedsculptor: Kujar Seedsculptor
+  jmp near _card_unimplemented     ; 200f381 TODO card_larger_than_life: Larger Than Life
+  jmp near _card_longtusk_cub     ; 200f386
+  jmp near _card_unimplemented     ; 200f38b TODO card_natures_way: Nature's Way
+  jmp near _card_unimplemented     ; 200f390 TODO card_nissa_vital_force: Nissa, Vital Force
+  jmp near _card_unimplemented     ; 200f395 TODO card_nissa_vital_force_emblem: Nissa, Vital Force Emblem
+  jmp near _card_unimplemented     ; 200f39a TODO card_ornamental_courage: Ornamental Courage
+  jmp near _card_unimplemented     ; 200f39f TODO card_oviya_pashiri_sage_lifecrafter: Oviya Pashiri, Sage Lifecrafter
+  jmp near _card_riparian_tiger     ; 200f3a4
+  jmp near _card_sage_of_shailas_claim     ; 200f3a9
+  jmp near _card_unimplemented     ; 200f3ae TODO card_servant_of_the_conduit: Servant of the Conduit
+  jmp near _card_unimplemented     ; 200f3b3 TODO card_take_down: Take Down
+  jmp near _card_unimplemented     ; 200f3b8 TODO card_verdurous_gearhulk: Verdurous Gearhulk
+  jmp near _card_unimplemented     ; 200f3bd TODO card_ondu_giant: Ondu Giant, Wild Wanderer
+  jmp near _card_unimplemented     ; 200f3c2 TODO card_wildest_dreams: Wildest Dreams
+  jmp near _card_unimplemented     ; 200f3c7 TODO card_wily_bandar: Wily Bandar
+  jmp near _card_unimplemented     ; 200f3cc TODO card_cloudblazer: Cloudblazer
+  jmp near _card_unimplemented     ; 200f3d1 TODO card_contraband_kingpin: Contraband Kingpin
+  jmp near _card_unimplemented     ; 200f3d6 TODO card_depala_pilot_exemplar: Depala, Pilot Exemplar
+  jmp near _card_unimplemented     ; 200f3db TODO card_dovin_baan: Dovin Baan
+  jmp near _card_unimplemented     ; 200f3e0 TODO card_dovin_baan_emblem: Dovin Baan Emblem
+  jmp near _card_unimplemented     ; 200f3e5 TODO card_empyreal_voyager: Empyreal Voyager
+  jmp near _card_unimplemented     ; 200f3ea TODO card_engineered_might: Engineered Might
+  jmp near _card_unimplemented     ; 200f3ef TODO card_hazardous_conditions: Hazardous Conditions
+  jmp near _card_unimplemented     ; 200f3f4 TODO card_kambal_consul_of_allocation: Kambal, Consul of Allocation
+  jmp near _card_unimplemented     ; 200f3f9 TODO card_rashmi_eternities_crafter: Rashmi, Eternities Crafter
+  jmp near _card_unimplemented     ; 200f3fe TODO card_restoration_gearsmith: Restoration Gearsmith
+  jmp near _card_unimplemented     ; 200f403 TODO card_saheeli_rai: Saheeli Rai
+  jmp near _card_unimplemented     ; 200f408 TODO card_unlicensed_disintegration: Unlicensed Disintegration
+  jmp near _card_voltaic_brawler     ; 200f40d
+  jmp near _card_whirler_virtuoso     ; 200f412
+  jmp near _card_unimplemented     ; 200f417 TODO card_aetherflux_reservoir: Aetherflux Reservoir
+  jmp near _card_unimplemented     ; 200f41c TODO card_animation_module: Animation Module
+  jmp near _card_aradara_express     ; 200f421
+  jmp near _card_unimplemented     ; 200f426 TODO card_ballista_charger: Ballista Charger
+  jmp near _card_bomat_bazaar_barge     ; 200f42b
+  jmp near _card_unimplemented     ; 200f430 TODO card_bomat_courier: Bomat Courier
+  jmp near _card_unimplemented     ; 200f435 TODO card_cogworkers_puzzleknot: Cogworker's Puzzleknot
+  jmp near _card_unimplemented     ; 200f43a TODO card_cultivators_caravan: Cultivator's Caravan
+  jmp near _card_unimplemented     ; 200f43f TODO card_deadlock_trap: Deadlock Trap
+  jmp near _card_unimplemented     ; 200f444 TODO card_decoction_module: Decoction Module
+  jmp near _card_unimplemented     ; 200f449 TODO card_demolition_stomper: Demolition Stomper
+  jmp near _card_unimplemented     ; 200f44e TODO card_dynavolt_tower: Dynavolt Tower
+  jmp near _card_unimplemented     ; 200f453 TODO card_eager_construct: Eager Construct
+  jmp near _card_unimplemented     ; 200f458 TODO card_electrostatic_pummeler: Electrostatic Pummeler, Fabrication Module
+  jmp near _card_unimplemented     ; 200f45d TODO card_unused_200f45d: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f462 TODO card_filigree_familiar: Filigree Familiar
+  jmp near _card_unimplemented     ; 200f467 TODO card_fireforgers_puzzleknot: Fireforger's Puzzleknot
+  jmp near _card_fleetwheel_cruiser     ; 200f46c
+  jmp near _card_etherium_sculptor     ; 200f471
+  jmp near _card_unimplemented     ; 200f476 TODO card_ghirapur_orrery: Ghirapur Orrery
+  jmp near _card_unimplemented     ; 200f47b TODO card_glassblowers_puzzleknot: Glassblower's Puzzleknot
+  jmp near _card_unimplemented     ; 200f480 TODO card_inventors_goggles: Inventor's Goggles
+  jmp near _card_iron_league_steed     ; 200f485
+  jmp near _card_unimplemented     ; 200f48a TODO card_key_to_the_city: Key to the City
+  jmp near _card_unimplemented     ; 200f48f TODO card_metalspinners_puzzleknot: Metalspinner's Puzzleknot
+  jmp near _card_unimplemented     ; 200f494 TODO card_metalwork_colossus: Metalwork Colossus
+  jmp near _card_unimplemented     ; 200f499 TODO card_multiform_wonder: Multiform Wonder
+  jmp near _card_unimplemented     ; 200f49e TODO card_narnam_cobra: Narnam Cobra
+  jmp near _card_ovalchase_dragster     ; 200f4a3
+  jmp near _card_unimplemented     ; 200f4a8 TODO card_perpetual_timepiece: Perpetual Timepiece
+  jmp near _card_unimplemented     ; 200f4ad TODO card_unused_200f4ad: (no card in Magic.exe uses this slot)
+  jmp near _card_renegade_freighter     ; 200f4b2
+  jmp near _card_unimplemented     ; 200f4b7 TODO card_scrapheap_scrounger: Scrapheap Scrounger
+  jmp near _card_unimplemented     ; 200f4bc TODO card_self_assembler: Self-Assembler
+  jmp near _card_sky_skiff     ; 200f4c1
+  jmp near _card_unimplemented     ; 200f4c6 TODO card_skysovereign_consul_flagship: Skysovereign, Consul Flagship
+  jmp near _card_unimplemented     ; 200f4cb TODO card_smugglers_copter: Smuggler's Copter
+  jmp near _card_unimplemented     ; 200f4d0 TODO card_torch_gauntlet: Torch Gauntlet
+  jmp near _card_unimplemented     ; 200f4d5 TODO card_weldfast_monitor: Weldfast Monitor
+  jmp near _card_unimplemented     ; 200f4da TODO card_whirlermaker: Whirlermaker
+  jmp near _card_unimplemented     ; 200f4df TODO card_unused_200f4df: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f4e4 TODO card_aether_hub: Aether Hub, Inventors' Fair
+  jmp near _card_unimplemented     ; 200f4e9 TODO card_unused_200f4e9: (no card in Magic.exe uses this slot)
+  jmp near _card_unimplemented     ; 200f4ee TODO card_sequestered_stash: Sequestered Stash
+  jmp near _card_unimplemented     ; 200f4f3 TODO card_chandra_pyrogenius: Chandra, Pyrogenius
+  jmp near _card_unimplemented     ; 200f4f8 TODO card_liberating_combustion: Liberating Combustion
+  jmp near _card_unimplemented     ; 200f4fd TODO card_renegade_firebrand: Renegade Firebrand
+  jmp near _card_unimplemented     ; 200f502 TODO card_nissa_natures_artisan: Nissa, Nature's Artisan
+  jmp near _card_unimplemented     ; 200f507 TODO card_guardian_of_the_great_conduit: Guardian of the Great Conduit
+  jmp near _card_unimplemented     ; 200f50c TODO card_verdant_crescendo: Verdant Crescendo
   align 32

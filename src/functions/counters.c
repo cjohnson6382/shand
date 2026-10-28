@@ -2089,3 +2089,50 @@ void raw_set_experience(int player, uint8_t new_number_of_counters)
 {
   player_counters[player].experience_ = new_number_of_counters;
 }
+
+void add_energy(int player, int number_of_counters)
+{
+  if (number_of_counters <= 0)
+    return;
+
+  int energy = player_counters[player].energy_;
+  energy += number_of_counters;
+  if (energy > 255)
+    energy = 255;
+  player_counters[player].energy_ = energy;
+
+  if (ai_is_speculating != 1)
+    play_sound_effect(WAV_COUNTER);
+}
+
+int pay_energy(int player, int number_of_counters)
+{
+  if (number_of_counters < 0 || player_counters[player].energy_ < number_of_counters)
+    return 0;
+
+  player_counters[player].energy_ -= number_of_counters;
+  return 1;
+}
+
+int pay_energy_optional(int player, int card, int number_of_counters, const char* prompt)
+{
+  if (ENERGY_COUNTERS(player) < number_of_counters)
+    return 0;
+
+  if (!IS_AI(player))
+    {
+      char buf[100];
+      if (!prompt)
+		{
+		  scnprintf(buf, 100, "Pay %d energy", number_of_counters);
+		  prompt = buf;
+		}
+      if (1 != DIALOG(player, card, EVENT_ACTIVATE,
+					  DLG_NO_STORAGE, DLG_NO_CANCEL,
+					  prompt, 1, 1,
+					  "Don't pay", 1, 1))
+		return 0;
+    }
+
+  return pay_energy(player, number_of_counters);
+}
