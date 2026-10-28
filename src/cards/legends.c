@@ -1892,6 +1892,7 @@ int card_field_of_dreams(int player, int card, event_t event)
 	  }
 
   if (affect_me(player, card) && instance->targets[0].player >= 0)
+	{
 	for (p = 0; p <= 1; ++p)
 	  if (instance->targets[p].card == -1)
 		{
@@ -1912,6 +1913,7 @@ int card_field_of_dreams(int player, int card, event_t event)
 			  legacy->info_slot = -csvid - 1;	// update csvid if it's different
 			}
 		}
+	}
 
   return enchant_world(player, card, event);
 }

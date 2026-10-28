@@ -1787,7 +1787,7 @@ static int if_would_enter_bf_sac_two_untapped_lands_instead(int player, int card
 	  test.state = STATE_TAPPED;
 	  test.state_flag = DOESNT_MATCH;
 
-	  if (!check_battlefield_for_special_card(player, card, player, CBFSC_GET_COUNT, &test) < 2)
+	  if (check_battlefield_for_special_card(player, card, player, CBFSC_GET_COUNT, &test) < 2)
 		ai_modifier -= 512;
 	}
 

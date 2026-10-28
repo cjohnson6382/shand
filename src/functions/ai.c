@@ -144,6 +144,13 @@ extern int challenge_round, challenge1, challenge2, challenge3, challenge4;
 BACKUP_AND_SAVE_LIST
 #undef BACKUP_CMD_A
 #undef BACKUP_CMD_S
+/* The memcpy()s below deliberately copy a whole block of Magic.exe's memory that starts at must_attack, so GCC's
+ * object-size checks don't apply. */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wstringop-overflow"
+#if __GNUC__ >= 11
+#pragma GCC diagnostic ignored "-Wstringop-overread"
+#endif
 void backup_data_for_ai(void)
 {
   // 0x498e30
@@ -217,6 +224,7 @@ void restore_data_for_ai_0(void)
 #undef BACKUP_CMD_A
 #undef BACKUP_CMD_S
 }
+#pragma GCC diagnostic pop
 
 void copy_to_display_supplement(void)
 {

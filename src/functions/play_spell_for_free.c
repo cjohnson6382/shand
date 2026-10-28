@@ -283,6 +283,10 @@ int put_into_play(int player, int card){
 	return card;
 }
 
+/* cost_xbugrwaU below is Magic.exe's 7-byte cost array, which the linker script exposes only by its first element
+ * (COST_COLORLESS), so GCC's object-size checks don't apply. */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wstringop-overflow"
 int compute_and_check_casting_cost(int player, int unused, int card)
 {
   // 200bb14
@@ -383,6 +387,7 @@ int compute_and_check_casting_cost(int player, int unused, int card)
 
   return result;
 }
+#pragma GCC diagnostic pop
 
 static int effect_may_play_card_from_exile(int player, int card, event_t event)
 {

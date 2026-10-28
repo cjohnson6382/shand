@@ -460,11 +460,13 @@ int card_hired_torturer(int player, int card, event_t event){
 						}
 						count++;
 				}
-				revealed[0] = t_hand[0];
-				if( th_count > 1 ){
-					revealed[0] = t_hand[internal_rand(th_count)];
+				if( th_count > 0 ){
+					revealed[0] = t_hand[0];
+					if( th_count > 1 ){
+						revealed[0] = t_hand[internal_rand(th_count)];
+					}
+					show_deck(HUMAN, revealed, 1, "Hired Torturer revealed...", 0, 0x7375B0 );
 				}
-				show_deck(HUMAN, revealed, 1, "Hired Torturer revealed...", 0, 0x7375B0 );
 			}
 		}
 	}

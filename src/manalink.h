@@ -145,7 +145,7 @@ extern int unknown62BCEC;
 extern int mana_paid[7];	// Mana paid in the last successful call to charge_mana().
 extern int mana_pool[2][8];
 extern int available_slots;
-char card_coded[30000/8];
+extern char card_coded[30000/8];	// in Magic.exe; see manalink.lds
 extern int creatures_dead_this_turn;
 extern int activation_card;
 extern int ai_is_speculating;
@@ -216,7 +216,7 @@ extern int PAY_MANA_RED;
 extern int PAY_MANA_WHITE;
 extern int PAY_MANA_ARTIFACT;
 
-char* set_legacy_effect_name_addr;
+extern char* set_legacy_effect_name_addr;
 
 int pick_creature_to_regen(target_definition_t td);
 int is_creature_dead(void);
@@ -316,7 +316,9 @@ void produce_mana(int, int, int);
 void real_lose_the_game(int);
 int real_put_into_play(int, int);
 int raw_put_iid_on_top_of_deck(int player, int iid);	// Put a newly-created card with internal_card_id iid on top of player's library.
+#ifndef __cplusplus	// C++ gets it from <cstdio>, with a conflicting linkage
 int sprintf(char *str, const char *format, ...);
+#endif
 int rearrange_top_3(int, int, event_t);
 void redraw_libraries(void);
 int regenerate(int, int, event_t, int, int);

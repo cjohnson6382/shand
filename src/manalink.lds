@@ -364,6 +364,9 @@ SECTIONS
     ManalinkEh.ao(.text)
     *(.text)
     *(SORT(.text$*))
+    *(.text.unlikely .text.unlikely.*)	/* emitted by newer gcc/libstdc++ */
+    *(.text.startup .text.startup.*)
+    *(.text.*)
     *(.glue_7t)
     *(.glue_7)
      ___CTOR_LIST__ = .; __CTOR_LIST__ = . ;
@@ -550,5 +553,18 @@ SECTIONS
   .debug_ranges BLOCK(__section_alignment__) (NOLOAD) :
   {
     *(.debug_ranges)
+  }
+  /* DWARF 5 (from prebuilt runtime libraries).  */
+  .debug_line_str BLOCK(__section_alignment__) (NOLOAD) :
+  {
+    *(.debug_line_str)
+  }
+  .debug_loclists BLOCK(__section_alignment__) (NOLOAD) :
+  {
+    *(.debug_loclists)
+  }
+  .debug_rnglists BLOCK(__section_alignment__) (NOLOAD) :
+  {
+    *(.debug_rnglists)
   }
 }

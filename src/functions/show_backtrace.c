@@ -4,8 +4,6 @@
 
 #include <windows.h>
 
-USHORT WINAPI RtlCaptureStackBackTrace(ULONG FramesToSkip, ULONG FramesToCapture, PVOID *BackTrace, PULONG BackTraceHash);
-
 void popup(const char* title, const char* fmt, ...);
 
 void

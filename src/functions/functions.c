@@ -2,6 +2,7 @@
 #include <windows.h>
 
 int discard_controller = 0;
+char* set_legacy_effect_name_addr;
 
 unsigned int num_bits_set(unsigned int v){
   // From Bit Twiddling Hacks, http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel
@@ -11360,7 +11361,7 @@ int reveal_cards_from_hand(int player, int card, test_definition_t *this_test){
 	int revealed = 0;
 
 	int count = 0;
-	while( count != -1 ){
+	while( count < active_cards_count[player] ){
 			if( in_hand(player, count) ){
 				card_instance_t *crd = get_card_instance(player, count);
 				ha[hac] = crd->internal_card_id;

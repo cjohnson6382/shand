@@ -11,11 +11,20 @@ OBJCOPY = objcopy
 DLLTOOL = dlltool
 
 # Flags
-COMMONFLAGS = -O2 -ggdb2 -march=i586 -mpreferred-stack-boundary=2	\
+COMMONFLAGS = -O2 -ggdb2 -gdwarf-4 -march=i586 -mpreferred-stack-boundary=2	\
 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual	\
 -Wcast-align -Wwrite-strings -Wshadow -W -Winline -Wno-unused-parameter	\
 -Werror -I.. -I.
-CFLAGS = $(COMMONFLAGS) -Wbad-function-cast -Wstrict-prototypes -Wnested-externs
+# Warnings newer GCCs (10+) raise on idioms this code relies on:
+#  - array-bounds: memcpy over Magic.exe memory starting at a linker-script symbol
+#  - address-of-packed-member: packed structs mirror Magic.exe's layout (x86 tolerates unaligned access)
+#  - misleading-indentation: mixed tab widths, not logic
+#  - implicit-fallthrough=1: fallthroughs are commented "and fall through", which level 3 doesn't recognize
+# Type-punning of exe memory isn't strict-aliasing safe, so don't let the optimizer assume it is.
+COMMONFLAGS += -fno-strict-aliasing -Wno-array-bounds -Wno-address-of-packed-member	\
+-Wno-misleading-indentation -Wimplicit-fallthrough=1
+# Enums and ints are mixed freely throughout.
+CFLAGS = $(COMMONFLAGS) -Wbad-function-cast -Wstrict-prototypes -Wnested-externs -Wno-enum-conversion
 CXXFLAGS = $(COMMONFLAGS) -std=gnu++0x
 AFLAGS = -a x86 -m x86 -p nasm -r nasm -f win32 -I.. -I.
 LFLAGS = -shared -static -static-libgcc -static-libstdc++

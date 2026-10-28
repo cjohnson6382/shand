@@ -1428,6 +1428,7 @@ void mana_burn(void)
 	  int amt_drained = 0, amt_left = 0;
 	  int clr;
 	  if (mana_pool[p][COLOR_ANY] > 0)
+		{
 		for (clr = COLOR_ARTIFACT; clr >= COLOR_COLORLESS; --clr)
 		  if (mana_doesnt_drain_from_pool[p][clr] & MANADRAIN_DOESNT_DRAIN)
 			amt_left += mana_pool[p][clr];
@@ -1456,6 +1457,7 @@ void mana_burn(void)
 			  mana_pool[p][clr] = nondraining;
 			  amt_left += nondraining;
 			}
+		}
 
 	  mana_pool[p][COLOR_ANY] = amt_left;
 
